@@ -1,45 +1,52 @@
-/* http://mit-license.org/ */
-var faviconId = "gondola-favicon-link";
-var faviconEl =  document.getElementById(faviconId)
+/*
+    Instantiate with an array of frame URLs and the ID of the favicon element. 
+    Then start the animation with the animate method.
+    eg. 
+        const myThing = new AnimatedFavicon(['/image1.png', '/image2.png'], 'favicon-link');
+        myThing.animate()
+*/
+class AnimatedFavicon {
 
-var loopTimeout = null;
+    defaultPause = 2000;
+    loopTimeout = null;
 
-var changeFavicon = function(iconURL) {
-    faviconEl.href = iconURL;
-};
-
-var favicon = {
-    "defaultPause": 2000,
-    "change": function(iconURL, optionalDocTitle) {
-        clearTimeout(loopTimeout);
-        if (optionalDocTitle) doc.title = optionalDocTitle;
-        if (iconURL !== "") changeFavicon(iconURL);
-    },
-    "animate": function(icons, optionalDelay) {
-        clearTimeout(loopTimeout);
-
-        // preload icons
-        icons.forEach(function(icon) {
-            (new Image()).src = icon;
-        });
-
-        optionalDelay = optionalDelay || this["defaultPause"];
-
-        var iconIndex = 0;
-        changeFavicon(icons[iconIndex]);
-
-        loopTimeout = setTimeout(function animateFunc() {
-            iconIndex = (iconIndex + 1) % icons.length;
-            changeFavicon(icons[iconIndex]);
-            loopTimeout = setTimeout(animateFunc, optionalDelay);
-        }, optionalDelay);
-    },
-    "stopAnimate": function() {
-        clearTimeout(loopTimeout);
+    constructor(frames, faviconId) {
+        frames.forEach(frame => (new Image()).src = frame); //preload images
+        this.frames = frames;
+        this.faviconEl =  document.getElementById(faviconId)
     }
+
+    // private
+    changeFavicon = (iconURL) => this.faviconEl.href = iconURL;
+
+    // private
+    change = (iconURL, optionalDocTitle) => {
+        this.clearTimeout(this.loopTimeout);
+        if (optionalDocTitle) doc.title = optionalDocTitle;
+        if (iconURL !== "") this.changeFavicon(iconURL);
+    }
+
+    // public
+    animate = (optionalDelay = this.defaultPause) => {
+        clearTimeout(this.loopTimeout);
+
+        let iconIndex = 0;
+        this.changeFavicon(this.frames[iconIndex]);
+
+        const animateFunc = () => {
+            iconIndex = (iconIndex + 1) % this.frames.length;
+            this.changeFavicon(this.frames[iconIndex]);
+            this.loopTimeout = setTimeout(animateFunc, optionalDelay);
+        }
+
+        this.loopTimeout = setTimeout(animateFunc, optionalDelay);
+    }
+
+    // public
+    stopAnimate = () => clearTimeout(this.loopTimeout);
 };
 
-favicon.animate([
+const gondolaFrames = [
     "favicon/dancing-gondola (1).ico",
     "favicon/dancing-gondola (1).ico",
     "favicon/dancing-gondola (1).ico",
@@ -91,4 +98,7 @@ favicon.animate([
     "favicon/dancing-gondola (13).ico",
     "favicon/dancing-gondola (14).ico",
     "favicon/dancing-gondola (14).ico"
- ], 60)
+]
+
+const animatedFavicon = new AnimatedFavicon(gondolaFrames, "gondola-favicon-link")
+animatedFavicon.animate(60);
