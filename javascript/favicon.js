@@ -1,5 +1,5 @@
 /* http://mit-license.org/ */
-
+var faviconId = "gondola-favicon-link";
 (function (root, factory) {
     if (typeof define === "function" && define["amd"]) {
         // AMD. Register as an anonymous module.
@@ -20,20 +20,14 @@
     var head = doc.getElementsByTagName("head")[0];
     var loopTimeout = null;
     var changeFavicon = function(iconURL) {
-        var newLink = doc.createElement("link");
-        newLink.type = "image/x-icon";
-        newLink.rel = "icon";
-        newLink.href = iconURL;
-        removeExistingFavicons();
-        head.appendChild(newLink);
-    };
-    var removeExistingFavicons = function() {
-        var links = head.getElementsByTagName("link");
-        for (var i = 0; i < links.length; i++) {
-            if (/\bicon\b/i.test(links[i].getAttribute("rel"))) {
-                head.removeChild(links[i]);
-            }
-        }
+        // var newLink = doc.createElement("link");
+        // newLink.type = "image/x-icon";
+        // newLink.rel = "icon";
+        // newLink.href = iconURL;
+        // newLink.id = faviconId;
+        // doc.getElementById(faviconId).remove()
+        // head.appendChild(newLink);
+        doc.getElementById(faviconId).href = iconURL;
     };
 
     // public
