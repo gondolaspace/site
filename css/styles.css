@@ -1,32 +1,33 @@
 /*****************TAG SELECTORS*****************/
 
 a {
-   color: yellow;
+   color: #fddb3a;
+   text-decoration: none;
 }
 
 body {
    background-color: black;
+   color: #e8e8e8;
+   font-family: "Open Sans", serif;
 }
 
 h1 {
-   color: white;
+   font-family: "Montserrat", sans-serif;
+   color: #e8e8e8;
 }
 
-p {
-   color: white;
+
+
+/* ---------------------------------- */
+/*CONTAINERS */
+/* ---------------------------------- */
+
+.container-fluid {
+  margin: 0 7% 0 7%;
 }
-
-td {
-   color: white;
-}
-
-/*****************CLASS SELECTORS*****************/
-
-.resized-artwork {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   outline: black;
+/* Padding between paragraphs on 'Art' page */
+.paragraph-container {
+  padding-top: 2%;
 }
 
 .content {
@@ -34,8 +35,232 @@ td {
    margin: 0 auto;
 }
 
+
+
+
+
+
+/* ---------------------------------- */
+/*Title & Text formatting */
+/* ---------------------------------- */
+
+/* Titles */
+.title {
+  text-align: center;
+  padding: 3% 0;
+  font-size: 2.8rem;
+}
+
+/* Text */
+.homepage-text {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+
+.seongs-notes {
+  visibility: hidden;
+}
+
+li {
+  padding-top: 5px;
+  max-width: 95%;
+}
+
+/* Table selectors */
+table {
+  padding: 2% 0;
+}
+
+td {
+  padding-right: 8px;
+}
+tr {
+  padding-top: 8px;
+}
+
+
+/* ---------------------------------- */
+/*Navigation Bar */
+/* ---------------------------------- */
 .navbar {
    max-width: 1280px;
-   margin: 0 auto;
+   margin: 3% auto;
+   padding: 0 1.6rem;
    text-align: center;
 }
+
+
+.nav-link {
+  margin-top: 2rem;
+  padding: 0 2rem;
+  min-width: 70px;
+}
+
+/* ---------------------------------- */
+/* Homepage Artwork */
+/* ---------------------------------- */
+.resized-artwork {
+   display: block;
+   text-align: center;
+   margin: 0 auto;
+   outline: black;
+   width: 50%;
+}
+
+/* ---------------------------------- */
+/* Portfolio Page */
+/* ---------------------------------- */
+.portfolio-container {
+  padding: 3% 5%;
+}
+
+.portfolio-image {
+  margin-left: 1.6rem;
+  border-radius: 3%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.portfolio-images {
+  max-width: 350px;
+  max-height: 350px;
+  flex: 50%;
+}
+
+
+/* Portfolio Image Columns */
+/* ---------------------------------- */
+.column {
+  flex: 23%;
+  max-width: 23%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Portfolio back-to-top button */
+/* ---------------------------------- */
+#back-to-top {
+  position: fixed;
+  bottom: 10%;
+  float: right;
+  right: 7%;
+  left: 93%;
+  max-width: 30px;
+  width: 100%;
+  font-size: 2rem;
+  padding: .5px;
+  background-color: Transparent;
+  border: none;
+}
+
+
+/* ---------------------------------- */
+/* Icons */
+/* ---------------------------------- */
+.icons {
+  padding: 10px 15px 10px 0;
+  font-size: 1.5rem;
+  color: #d9c6a5;
+}
+
+/* ---------------------------------- */
+/* Footer section */
+/* ---------------------------------- */
+
+footer {
+  text-align: center;
+  margin-top: 18%;
+}
+
+.footer-copyright {
+  margin-top: 1.5%;
+}
+
+.icons-footer {
+  margin: 5% 1.5%;
+  font-size: 1.5rem;
+  color: #ffd369;
+}
+
+
+
+/* ---------------------------------- */
+/* Media Queries */
+/* ---------------------------------- */
+
+/* Media Query: Large Screens */
+/* ---------------------------------- */
+@media (min-width: 1390px) {
+  .container-fluid, .portfolio-container {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
+
+
+/* Media Query: Tablet*/
+/* ---------------------------------- */
+
+@media (max-width: 1200px) {
+  .nav-link, .nav-item {
+    text-align: right;
+    padding-left: 5px;
+    margin: 5px;
+  }
+
+  .column {
+    flex: 50%;
+    max-width: 45%;
+  }
+
+  .row {
+    margin: auto;
+  }
+
+}
+
+/* Media Query: Mobile */
+/* ---------------------------------- */
+@media (max-width: 650px) {
+
+  .section-align {
+    text-align: center;
+  }
+  .navbar-brand {
+    text-align: left;
+  }
+
+  .nav-link, .nav-item {
+    text-align: right;
+    padding: 0;
+    margin: 2px;
+  }
+
+  .profile-picture {
+    margin: 2% 0;
+    width: 250px;
+    height: 250px;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .portfolio-image {
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+}
+/* ---------------------------------- */
