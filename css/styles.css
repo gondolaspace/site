@@ -1,27 +1,40 @@
 /*****************TAG SELECTORS*****************/
-
 a {
    color: #fddb3a;
    text-decoration: none;
 }
-
+a:hover {
+  color: #fdb827;
+  text-decoration: none;
+}
 body {
    background-color: black;
    color: #e8e8e8;
    font-family: "Open Sans", serif;
 }
-
 h1 {
    font-family: "Montserrat", sans-serif;
    color: #e8e8e8;
 }
 
-
+/* ---------------------------------- */
+/*Navigation Bar */
+/* ---------------------------------- */
+.navbar .navbar-nav {
+   max-width: 1280px;
+   margin: 3% auto;
+   padding: 0 1.6rem;
+}
+.nav-link {
+  margin: 1rem 3rem;
+}
+.nav-img {
+  min-width: 70px;
+}
 
 /* ---------------------------------- */
 /*CONTAINERS */
 /* ---------------------------------- */
-
 .container-fluid {
   margin: 0 7% 0 7%;
 }
@@ -29,16 +42,10 @@ h1 {
 .paragraph-container {
   padding-top: 2%;
 }
-
 .content {
    max-width: 1280px;
    margin: 0 auto;
 }
-
-
-
-
-
 
 /* ---------------------------------- */
 /*Title & Text formatting */
@@ -49,19 +56,18 @@ h1 {
   text-align: center;
   padding: 3% 0;
   font-size: 2.8rem;
+  font-weight: 700;
 }
 
 /* Text */
 .homepage-text {
   text-align: center;
   font-size: 1.3rem;
+  padding: 3%;
 }
-
-
 .seongs-notes {
   visibility: hidden;
 }
-
 li {
   padding-top: 5px;
   max-width: 95%;
@@ -71,30 +77,11 @@ li {
 table {
   padding: 2% 0;
 }
-
 td {
   padding-right: 8px;
 }
 tr {
   padding-top: 8px;
-}
-
-
-/* ---------------------------------- */
-/*Navigation Bar */
-/* ---------------------------------- */
-.navbar {
-   max-width: 1280px;
-   margin: 3% auto;
-   padding: 0 1.6rem;
-   text-align: center;
-}
-
-
-.nav-link {
-  margin-top: 2rem;
-  padding: 0 2rem;
-  min-width: 70px;
 }
 
 /* ---------------------------------- */
@@ -109,29 +96,66 @@ tr {
 }
 
 /* ---------------------------------- */
+/* X-MAS 2K20 EVENT STYLING */
+/* ---------------------------------- */
+
+.xmas-heading {
+  color: #d92027;
+}
+.xmas-tree {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  border-radius: 5%;
+}
+
+/* Xmas Decorations Carousel*/
+/* ---------------------------------- */
+
+.carousel {
+  max-width: 200px;
+  max-height: 150px;
+  text-align: center;
+  margin: auto;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 25px;
+  height: 150px;
+  filter: invert(60%);
+}
+.xmas-carousel {
+  margin: 5%;
+}
+.carousel-inner {
+max-height: 200px;
+text-align: center;
+}
+.xmas-img {
+  height: 100%;
+}
+
+/* ---------------------------------- */
 /* Portfolio Page */
 /* ---------------------------------- */
 .portfolio-container {
   padding: 3% 5%;
 }
-
 .portfolio-image {
   margin-left: 1.6rem;
   border-radius: 3%;
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
-
 .portfolio-images {
   max-width: 350px;
   max-height: 350px;
   flex: 50%;
 }
-
 
 /* Portfolio Image Columns */
 /* ---------------------------------- */
@@ -140,7 +164,6 @@ tr {
   max-width: 23%;
   padding: 0 4px;
 }
-
 .column img {
   margin-top: 8px;
   vertical-align: middle;
@@ -163,7 +186,6 @@ tr {
   border: none;
 }
 
-
 /* ---------------------------------- */
 /* Icons */
 /* ---------------------------------- */
@@ -181,18 +203,14 @@ footer {
   text-align: center;
   margin-top: 18%;
 }
-
 .footer-copyright {
   margin-top: 1.5%;
 }
-
 .icons-footer {
   margin: 5% 1.5%;
   font-size: 1.5rem;
   color: #ffd369;
 }
-
-
 
 /* ---------------------------------- */
 /* Media Queries */
@@ -207,7 +225,6 @@ footer {
   }
 }
 
-
 /* Media Query: Tablet*/
 /* ---------------------------------- */
 
@@ -217,16 +234,13 @@ footer {
     padding-left: 5px;
     margin: 5px;
   }
-
   .column {
     flex: 50%;
     max-width: 45%;
   }
-
   .row {
     margin: auto;
   }
-
 }
 
 /* Media Query: Mobile */
@@ -239,28 +253,22 @@ footer {
   .navbar-brand {
     text-align: left;
   }
-
   .nav-link, .nav-item {
     text-align: right;
     padding: 0;
     margin: 2px;
   }
-
   .profile-picture {
     margin: 2% 0;
     width: 250px;
     height: 250px;
   }
-
   .column {
     flex: 100%;
     max-width: 100%;
   }
-
   .portfolio-image {
     max-width: 90%;
     margin-left: 0;
-  }
-
 }
-/* ---------------------------------- */
+}
