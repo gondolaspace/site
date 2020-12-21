@@ -9,7 +9,6 @@ Submissions in carousel (artist name, image file name)
 5. Spain Krisis, 'SpainKrisis.png'
 6. quastio, 'james.png'
 
-
 Submissions to upload to website carousel:
 * charlie, 'phi.png'
 * Sodium, 'Sodium.png'
