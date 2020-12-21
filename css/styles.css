@@ -36,7 +36,7 @@ h1 {
 /*CONTAINERS */
 /* ---------------------------------- */
 .container-fluid {
-  margin: 0 7% 0 7%;
+  padding: 0 7% 0 7%;
 }
 /* Padding between paragraphs on 'Art' page */
 .paragraph-container {
@@ -219,11 +219,13 @@ footer {
 /* Media Query: Large Screens */
 /* ---------------------------------- */
 @media (min-width: 1390px) {
+
   .container-fluid, .portfolio-container {
     max-width: 1500px;
     margin: auto;
   }
 }
+
 
 /* Media Query: Tablet*/
 /* ---------------------------------- */
