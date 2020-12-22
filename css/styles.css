@@ -65,6 +65,13 @@ h1 {
   font-size: 1.3rem;
   padding: 3%;
 }
+
+.subheading-link {
+  text-align: center;
+  padding-top: 4%;
+  font-size: 1.65rem;
+}
+
 .seongs-notes {
   visibility: hidden;
 }

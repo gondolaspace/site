@@ -1,19 +1,26 @@
 README - Submissions information.
 
+
+
 Submissions in carousel (artist name, image file name)
 
 1. Samurai Dog, 'shanic0.png'
 2. Creepy-Evening, 'Angelica Garcia.png'
-3. Samurai Dog, 'shanic02.png'
-4. KTB, 'KTB.png'
-5. Spain Krisis, 'SpainKrisis.png'
-6. quastio, 'james.png'
+3. KTB, 'KTB.png'
+4. Spain Krisis, 'SpainKrisis.png'
+5. quastio, 'james.png'
+6. Sodium, 'Sodium.png'
+7. kdkdkch, 'Kevin De Keyser.png'
+8. Gondola#1337, 'Dimitri Rumen.png'
+9. charlie, 'phi.png'
+10. Bradlighteningdick, 'Andrew Roach.png'
+11. Sea Williams, 'Clear Lakes Productions.png'
+
+
 
 Submissions to upload to website carousel:
-* charlie, 'phi.png'
-* Sodium, 'Sodium.png'
-* kdkdkch, 'Kevin De Keyser.png'
-* Gondola#1337, 'Dimitri Rumen.png'
-* Bradlighteningdick, 'Andrew Roach.png'
-* Sea Williams, 'Sea Williams.png'
-* Gondola#1337 (Two submissions made by this user - one 'reupload'), 'Dimitri Rumen.png'
+
+* Fun Silly Drawings for Fun Silly People Haha, 'James Nee.png'
+* IT!, 'Wanna A Jed.png'
+* Khlor'khlorghaal.png'
+* Mark V. Shaney, 'josh.png'
