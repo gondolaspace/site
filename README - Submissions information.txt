@@ -15,12 +15,21 @@ Submissions in carousel (artist name, image file name)
 9. charlie, 'phi.png'
 10. Bradlighteningdick, 'Andrew Roach.png'
 11. Sea Williams, 'Clear Lakes Productions.png'
+12. Fun Silly Drawings for Fun Silly People Haha, 'James Nee.png'
+13. Khlor, 'khlorghaal.png'
+14. Mark V. Shaney, 'josh.png'
+15. Lemonade pie, 'Ale.png'
+16. pepi, 'Peps De Pepi.png'
+17. Francesco De Marchi, 'Francesco De Marchi.png'
+18. Felkvir, 'Retetop.png'
+19. Gear Grinder, 'Adam Singer.png'
+20. Pierre Roux, 'Pierre Roux.png'
+21. Le.gondola, 't.archivist.png'
+22.
+23.
+24.
+25.
 
 
 
 Submissions to upload to website carousel:
-
-* Fun Silly Drawings for Fun Silly People Haha, 'James Nee.png'
-* IT!, 'Wanna A Jed.png'
-* Khlor'khlorghaal.png'
-* Mark V. Shaney, 'josh.png'
