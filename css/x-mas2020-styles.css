@@ -1,0 +1,298 @@
+/*****************TAG SELECTORS*****************/
+a {
+   color: #fddb3a;
+   text-decoration: none;
+}
+a:hover {
+  color: #fdb827;
+  text-decoration: none;
+}
+body {
+   background-color: black;
+   color: #e8e8e8;
+   font-family: "Open Sans", serif;
+}
+h1 {
+   font-family: "Montserrat", sans-serif;
+   color: #e8e8e8;
+}
+
+/* ---------------------------------- */
+/*Navigation Bar */
+/* ---------------------------------- */
+.navbar .navbar-nav {
+   max-width: 1280px;
+   margin: 3% auto;
+   padding: 0 1.6rem;
+}
+.nav-link {
+  margin: 1rem 3rem;
+}
+.nav-img {
+  min-width: 70px;
+}
+
+/* ---------------------------------- */
+/*CONTAINERS */
+/* ---------------------------------- */
+.container-fluid {
+  padding: 0 7% 0 7%;
+}
+/* Padding between paragraphs on 'Art' page */
+.paragraph-container {
+  padding-top: 2%;
+}
+.content {
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+/* ---------------------------------- */
+/*Title & Text formatting */
+/* ---------------------------------- */
+
+/* Titles */
+.title {
+  text-align: center;
+  padding: 3% 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+/* Text */
+.homepage-text {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 3%;
+}
+
+.subheading-link {
+  text-align: center;
+  padding-top: 4%;
+  font-size: 1.65rem;
+}
+
+.seongs-notes {
+  visibility: hidden;
+}
+li {
+  padding-top: 5px;
+  max-width: 95%;
+}
+
+/* Table selectors */
+table {
+  padding: 2% 0;
+}
+td {
+  padding-right: 8px;
+}
+tr {
+  padding-top: 8px;
+}
+
+/* ---------------------------------- */
+/* Homepage Artwork */
+/* ---------------------------------- */
+.resized-artwork {
+   display: block;
+   text-align: center;
+   margin: 0 auto;
+   outline: black;
+   width: 50%;
+}
+
+/* ---------------------------------- */
+/* X-MAS 2K20 EVENT STYLING */
+/* ---------------------------------- */
+
+.xmas-heading {
+  color: #d92027;
+}
+.xmas-tree {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  border-radius: 5%;
+  min-width: 350px;
+}
+
+/* Xmas Decorations Carousel*/
+/* ---------------------------------- */
+
+.carousel {
+  max-width: 200px;
+  max-height: 200px;
+  text-align: center;
+  margin: auto;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 25px;
+  height: 130px;
+  filter: invert(60%);
+}
+.xmas-carousel {
+  margin: 5%;
+}
+.carousel-inner {
+max-height: 200px;
+text-align: center;
+}
+
+/* ---------------------------------- */
+/* Portfolio Page */
+/* ---------------------------------- */
+.portfolio-container {
+  padding: 3% 5%;
+}
+.portfolio-image {
+  margin-left: 1.6rem;
+  border-radius: 3%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.portfolio-images {
+  max-width: 350px;
+  max-height: 350px;
+  flex: 50%;
+}
+
+/* Portfolio Image Columns */
+/* ---------------------------------- */
+.column {
+  flex: 23%;
+  max-width: 23%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Portfolio back-to-top button */
+/* ---------------------------------- */
+#back-to-top {
+  position: fixed;
+  bottom: 10%;
+  float: right;
+  right: 7%;
+  left: 93%;
+  max-width: 30px;
+  width: 100%;
+  font-size: 2rem;
+  padding: .5px;
+  background-color: Transparent;
+  border: none;
+}
+
+/* ---------------------------------- */
+/* Icons */
+/* ---------------------------------- */
+.icons {
+  padding: 10px 15px 10px 0;
+  font-size: 1.5rem;
+  color: #d9c6a5;
+}
+
+/* ---------------------------------- */
+/* Footer section */
+/* ---------------------------------- */
+
+footer {
+  text-align: center;
+  margin-top: 18%;
+}
+.footer-copyright {
+  margin-top: 1.5%;
+}
+.icons-footer {
+  margin: 5% 1.5%;
+  font-size: 1.5rem;
+  color: #ffd369;
+}
+
+/* ---------------------------------- */
+/* Media Queries */
+/* ---------------------------------- */
+
+/* Media Query: Large Screens */
+/* ---------------------------------- */
+@media (min-width: 1390px) {
+
+  .container-fluid, .portfolio-container {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
+
+
+/* Media Query: Tablet*/
+/* ---------------------------------- */
+
+@media (max-width: 1200px) {
+
+  .container-fluid, .portfolio-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+  .nav-link, .nav-item {
+    text-align: right;
+    padding-left: 5px;
+    margin: 5px;
+  }
+  .column {
+    flex: 50%;
+    max-width: 45%;
+  }
+  .row {
+    margin: auto;
+  }
+}
+
+/* Media Query: Mobile */
+/* ---------------------------------- */
+@media (max-width: 650px) {
+  .container-fluid, .portfolio-container {
+    max-width: 650px;
+    margin: auto;
+  }
+
+  .xmas-heading {
+    font-size: 2.2rem;
+  }
+  .section-align {
+    text-align: center;
+  }
+  .navbar-brand {
+    text-align: left;
+  }
+  .nav-link, .nav-item {
+    text-align: right;
+    padding: 0 4px;
+    margin: 2px;
+  }
+  .profile-picture {
+    margin: 2% 0;
+    width: 250px;
+    height: 250px;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .portfolio-image {
+    max-width: 90%;
+    margin-left: 0;
+}
+}

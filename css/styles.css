@@ -102,44 +102,6 @@ tr {
    width: 50%;
 }
 
-/* ---------------------------------- */
-/* X-MAS 2K20 EVENT STYLING */
-/* ---------------------------------- */
-
-.xmas-heading {
-  color: #d92027;
-}
-.xmas-tree {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  width: 50%;
-  border-radius: 5%;
-  min-width: 350px;
-}
-
-/* Xmas Decorations Carousel*/
-/* ---------------------------------- */
-
-.carousel {
-  max-width: 200px;
-  max-height: 200px;
-  text-align: center;
-  margin: auto;
-}
-.carousel-control-next,
-.carousel-control-prev {
-  width: 25px;
-  height: 130px;
-  filter: invert(60%);
-}
-.xmas-carousel {
-  margin: 5%;
-}
-.carousel-inner {
-max-height: 200px;
-text-align: center;
-}
 
 /* ---------------------------------- */
 /* Portfolio Page */
@@ -241,8 +203,6 @@ footer {
     max-width: 1200px;
     margin: auto;
   }
-
-
   .navbar-nav {
     flex-direction: row;
   }
@@ -263,13 +223,10 @@ footer {
 /* Media Query: Mobile */
 /* ---------------------------------- */
 @media (max-width: 650px) {
+
   .container-fluid, .portfolio-container {
     max-width: 650px;
     margin: auto;
-  }
-
-  .xmas-heading {
-    font-size: 2.2rem;
   }
   .section-align {
     text-align: center;
