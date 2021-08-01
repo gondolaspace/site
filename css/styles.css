@@ -163,6 +163,57 @@ tr {
 }
 
 /* ---------------------------------- */
+/* Mouse Cursor */
+/* ---------------------------------- */
+
+* {
+  cursor: url("../art/assets/cursor/gondolacursor0013.png"), auto;
+  animation: animate 1.75s infinite;
+   }
+
+@keyframes animate{
+   22%{
+    cursor: url("../art/assets/cursor/gondolacursor0000.png"), auto;
+   }
+   26%{
+    cursor: url("../art/assets/cursor/gondolacursor0001.png"), auto;
+   }
+   48%{
+    cursor: url("../art/assets/cursor/gondolacursor0002.png"), auto;
+   }
+   52%{
+    cursor: url("../art/assets/cursor/gondolacursor0003.png"), auto;
+   }
+   56%{
+    cursor: url("../art/assets/cursor/gondolacursor0004.png"), auto;
+   }
+   60%{
+    cursor: url("../art/assets/cursor/gondolacursor0005.png"), auto;
+   }
+   64%{
+    cursor: url("../art/assets/cursor/gondolacursor0006.png"), auto;
+   }
+   69%{
+    cursor: url("../art/assets/cursor/gondolacursor0007.png"), auto;
+   }
+   71%{
+    cursor: url("../art/assets/cursor/gondolacursor0008.png"), auto;
+   }
+   75%{
+    cursor: url("../art/assets/cursor/gondolacursor0009.png"), auto;
+   }
+   87%{
+    cursor: url("../art/assets/cursor/gondolacursor0010.png"), auto;
+   }
+   92%{
+    cursor: url("../art/assets/cursor/gondolacursor0012.png"), auto;
+   }
+   100%{
+    cursor: url("../art/assets/cursor/gondolacursor0013.png"), auto;
+   }
+}
+
+/* ---------------------------------- */
 /* Footer section */
 /* ---------------------------------- */
 
