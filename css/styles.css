@@ -17,6 +17,13 @@ h1 {
    color: #e8e8e8;
 }
 
+#myPicture {
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* ---------------------------------- */
 /*Navigation Bar */
 /* ---------------------------------- */
