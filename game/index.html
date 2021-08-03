@@ -48,26 +48,26 @@
 
    <h1>Games and Toys</h1>
    <div>
-      Here's where we keep the games and toys. At the moment they are a bit disorganised, so only some of them are on display.<br><br>Please take a seat and get comfortable. Try clicking around. Would you like <a href="a-cup-of-tea.html">A Cup of Tea</a> while you explore?
+      Here's where we keep the games and toys; and the tea. At the moment they are a bit disorganised, so only some of them are on display. Feel free to look around.<br><br>Please take a seat and get comfortable. Try clicking around. <br> How about <a href="a-cup-of-tea.html">A Cup of Tea</a>?
    </div>
-
+   <br>
    <div id="lakeAdventureGame" style="position:relative;">
       <img id="lakeAdventure" src="../art/seong/2020-09-22_a01.png" style="z-axis:0; position:absolute;" usemap="#lakeAdventure">
+   <!-- lakeAdventure results (hidden until triggered) -->
+      <img class="lakeAdventureResult" id="lakeAdventure1" src="../art/seong/2020-09-22_a02.png"style="z-axis:1; position:absolute; visibility:hidden;" usemap="#lakeAdventure0">
+      <img class="lakeAdventureResult" id="lakeAdventure2" src="../art/seong/2020-09-22_a03.gif" style="z-axis:1; position:absolute; visibility:hidden;" usemap="#lakeAdventure0">
+      <img class="lakeAdventureResult" id="lakeAdventure3" src="../art/seong/2020-09-22_a04.png" style="z-axis:1; position:absolute; visibility:hidden;" usemap="#lakeAdventure0">
+   <!-- lakeAdventure usemaps -->
       <map name="lakeAdventure">
          <area shape="rect" coords="26, 432, 200, 439" onclick="lake1()">
          <area shape="rect" coords="26, 440, 151, 448" onclick="lake2()">
          <area shape="rect" coords="26, 448, 231, 456" onclick="lake3()">
       </map>
-      <img class="lakeAdventureResult" id="lakeAdventure1" src="../art/seong/2020-09-22_a02.png" usemap="lakeAdventureBack" style="z-axis:1; position:absolute; visibility:hidden;">
-      <img class="lakeAdventureResult" id="lakeAdventure2" src="../art/seong/2020-09-22_a03.gif" usemap="lakeAdventureBack" style="z-axis:1; position:absolute; visibility:hidden;">
-      <img class="lakeAdventureResult" id="lakeAdventure3" src="../art/seong/2020-09-22_a04.png" usemap="lakeAdventureBack" style="z-axis:1; position:absolute; visibility:hidden;">
+   <!-- go back by clicking anywhere inside the textbox -->
+      <map name="lakeAdventure0">
+         <area shape="rect" coords="15, 351, 465, 465" onclick="lake0()">
+      </map>
    </div>
-   <script>
-      (function(){
-         document.getElementByClassName("lakeAdventureResult").addEventListener("click", lake0);
-      }
-      )();
-   </script>
 
    <script>
       function lake1() {
@@ -86,10 +86,10 @@
    </script>
    <script>
       function lake0() {
-         document.getElementByClassName("lakeAdventureResult").style.visibility="hidden";
+         document.getElementById("lakeAdventure1").style.visibility="hidden";
+         document.getElementById("lakeAdventure2").style.visibility="hidden";
+         document.getElementById("lakeAdventure3").style.visibility="hidden";
       }
    </script>
-   <map name="lakeAdventure0">
-      <area shape="rect" coords="15, 351, 465, 465" onclick="lake0()">
-   </map>
+
 </body>
