@@ -21,21 +21,6 @@
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-   <!-- lakeAdventureGame image overlap -->
-   <style>
-   .fishes
-   {
-   position: relative;
-   top: 0;
-   left: 0;
-   }
-   .fish
-   {
-   position: absolute;
-   top: 60px;
-   left: 80px;
-   }
-   </style>
 </head>
 
 <body>
@@ -66,39 +51,45 @@
       Here's where we keep the games and toys. At the moment they are a bit disorganised, so only some of them are on display.<br><br>Please take a seat and get comfortable. Try clicking around. Would you like <a href="a-cup-of-tea.html">A Cup of Tea</a> while you explore?
    </div>
 
-   <div id="lakeAdventureGame">
-      <img id="lakeAdventure" src="../art/seong/2020-09-22_a01.png" usemap="#lakeAdventure">
+   <div id="lakeAdventureGame" style="position:relative;">
+      <img id="lakeAdventure" src="../art/seong/2020-09-22_a01.png" style="z-axis:0; position:absolute;" usemap="#lakeAdventure">
       <map name="lakeAdventure">
          <area shape="rect" coords="26, 432, 200, 439" onclick="lake1()">
          <area shape="rect" coords="26, 440, 151, 448" onclick="lake2()">
          <area shape="rect" coords="26, 448, 231, 456" onclick="lake3()">
       </map>
-      <script>
-         function lake1() {
-            document.getElementById("lakeAdventure").src="../art/seong/2020-09-22_a02.png";
-            document.getElementById("lakeAdventure").usemap="#lakeAdventure0";
-         }
-      </script>
-      <script>
-         function lake2() {
-            document.getElementById("lakeAdventure").src="../art/seong/2020-09-22_a03.gif";
-            document.getElementById("lakeAdventure").usemap="#lakeAdventure0";
-         }
-      </script>
-      <script>
-         function lake3() {
-            document.getElementById("lakeAdventure").src="../art/seong/2020-09-22_a04.png";
-            document.getElementById("lakeAdventure").usemap="#lakeAdventure0";
-         }
-      </script>
-      <script>
-         function lake0() {
-            document.getElementById("lakeAdventure").src="..art/seong/2020-09-22_a01.png";
-            document.getElementById("lakeAdventure").usemap="#lakeAdventure";
-         }
-      </script>
-      <map name="lakeAdventure0">
-         <area shape="rect" coords="15, 351, 465, 465" onclick="lake0()">
-      </map>
+      <img class="lakeAdventureResult" id="lakeAdventure1" src="../art/seong/2020-09-22_a02.png" usemap="lakeAdventureBack" style="z-axis:1; position:absolute; visibility:hidden;">
+      <img class="lakeAdventureResult" id="lakeAdventure2" src="../art/seong/2020-09-22_a03.gif" usemap="lakeAdventureBack" style="z-axis:1; position:absolute; visibility:hidden;">
+      <img class="lakeAdventureResult" id="lakeAdventure3" src="../art/seong/2020-09-22_a04.png" usemap="lakeAdventureBack" style="z-axis:1; position:absolute; visibility:hidden;">
    </div>
+   <script>
+      (function(){
+         document.getElementByClassName("lakeAdventureResult").addEventListener("click", lake0);
+      }
+      )();
+   </script>
+
+   <script>
+      function lake1() {
+         document.getElementById("lakeAdventure1").style.visibility="visible";
+      }
+   </script>
+   <script>
+      function lake2() {
+         document.getElementById("lakeAdventure2").style.visibility="visible";
+      }
+   </script>
+   <script>
+      function lake3() {
+         document.getElementById("lakeAdventure3").style.visibility="visible";
+      }
+   </script>
+   <script>
+      function lake0() {
+         document.getElementByClassName("lakeAdventureResult").style.visibility="hidden";
+      }
+   </script>
+   <map name="lakeAdventure0">
+      <area shape="rect" coords="15, 351, 465, 465" onclick="lake0()">
+   </map>
 </body>
