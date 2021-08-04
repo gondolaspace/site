@@ -106,44 +106,44 @@
 
    <!-- Buffalo Game -->
 
-   <div id="monsterRiderGame" style="position:relative; text-align:center; width:50%; visibility:hidden;">
+   <div id="monsterRiderGame" style="position:relative; text-align:left; width:50%; visibility:visible;">
       <img id="monsterRider" src="../art/seong/2020-09-28_a01.png" style="z-axis:0; position:absolute;" usemap="#monsterRider">
    <!-- lakeAdventure results (hidden until triggered) -->
-      <img class="monsterRiderResult" id="lakeAdventure1" src="../art/seong/2020-09-28_a02.png"style="z-axis:1; position:absolute; visibility:hidden;" usemap="#monsterRider0">
-      <img class="monsterRiderResult" id="lakeAdventure2" src="../art/seong/2020-09-28_a03.gif" style="z-axis:1; position:absolute; visibility:hidden;" usemap="#monsterRider0">
-      <img class="monsterRiderResult" id="lakeAdventure3" src="../art/seong/2020-09-28_a04.png" style="z-axis:1; position:absolute; visibility:hidden;" usemap="#monsterRider0">
+      <img class="monsterRiderResult" id="monsterRiderResult1" src="../art/seong/2020-09-28_a02.png"style="z-axis:1; position:absolute; visibility:hidden;" usemap="#monsterRider0">
+      <img class="monsterRiderResult" id="monsterRiderResult2" src="../art/seong/2020-09-28_a03.png" style="z-axis:1; position:absolute; visibility:hidden;" usemap="#monsterRider0">
+      <img class="monsterRiderResult" id="monsterRiderResult3" src="../art/seong/2020-09-28_a04.png" style="z-axis:1; position:absolute; visibility:hidden;" usemap="#monsterRider0">
    <!-- lakeAdventure usemaps -->
-      <map name="lakeAdventure">
-         <area shape="rect" coords="26, 432, 200, 439" onclick="monsterRider1()">
-         <area shape="rect" coords="26, 440, 151, 448" onclick="monsterRider2()">
-         <area shape="rect" coords="26, 448, 231, 456" onclick="monsterRider3()">
+      <map name="monsterRider">
+         <area shape="rect" coords="258, 758, 523, 798" onclick="monsterRider1()">
+         <area shape="rect" coords="258, 818, 557, 830" onclick="monsterRider2()">
+         <area shape="rect" coords="258, 850, 478, 862" onclick="monsterRider3()">
       </map>
    <!-- go back by clicking anywhere inside the textbox -->
       <map name="monsterRider0">
-         <area shape="rect" coords="15, 351, 465, 465" onclick="monsterRider0()">
+         <area shape="rect" coords="28, 731, 933, 933" onclick="monsterRider0()">
       </map>
    </div>
 
    <script>
       function monsterRider1() {
-         document.getElementById("monsterRider1").style.visibility="visible";
+         document.getElementById("monsterRiderResult1").style.visibility="visible";
       }
    </script>
    <script>
       function monsterRider2() {
-         document.getElementById("monsterRider2").style.visibility="visible";
+         document.getElementById("monsterRiderResult2").style.visibility="visible";
       }
    </script>
    <script>
       function monsterRider3() {
-         document.getElementById("monsterRider3").style.visibility="visible";
+         document.getElementById("monsterRiderResult3").style.visibility="visible";
       }
    </script>
    <script>
       function monsterRider0() {
-         document.getElementById("monsterRider1").style.visibility="hidden";
-         document.getElementById("monsterRider2").style.visibility="hidden";
-         document.getElementById("monsterRider3").style.visibility="hidden";
+         document.getElementById("monsterRiderResult1").style.visibility="hidden";
+         document.getElementById("monsterRiderResult2").style.visibility="hidden";
+         document.getElementById("monsterRiderResult3").style.visibility="hidden";
       }
    </script>
 
