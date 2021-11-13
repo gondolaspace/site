@@ -1,4 +1,9 @@
 /*****************EVENT SPECIFIC*****************/
+.tiled-artwork {
+    margin: auto;
+    width: 50%
+}
+
 .tiled-artwork:img {
     width: auto;
     height: auto;
